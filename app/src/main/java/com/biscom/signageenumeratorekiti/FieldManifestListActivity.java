@@ -80,6 +80,7 @@ public class FieldManifestListActivity extends Activity implements GoogleApiClie
     ListView lstStructures;
     ListViewAdapters arrayAdapter;
     TextView txttowntitle;
+    TextView txtvalueonlist;
     // Search EditText
     EditText inputSearch;
     TextView title;
@@ -230,8 +231,11 @@ public class FieldManifestListActivity extends Activity implements GoogleApiClie
             @Override
             public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
                                     long arg3) {
-                sItemPosition = arg2;
-                getneededvalues(sItemPosition);
+
+                //Gettint the position from the view because the list can be filetered
+                txtvalueonlist =(TextView) arg1.findViewById(R.id.value);
+                sItemPosition=Integer.valueOf(txtvalueonlist.getText().toString());
+                getneededvalues(sItemPosition-1);
                 if (ActivityCompat.checkSelfPermission(getBaseContext(), android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED || ActivityCompat.checkSelfPermission(getBaseContext(), android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED || ActivityCompat.checkSelfPermission(getBaseContext(), Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED || ActivityCompat.checkSelfPermission(getBaseContext(), Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
                     //What todo if there is no permission
                     Toast.makeText(FieldManifestListActivity.this, "Cannot Capture: No Complete permission on the device)", Toast.LENGTH_LONG).show();

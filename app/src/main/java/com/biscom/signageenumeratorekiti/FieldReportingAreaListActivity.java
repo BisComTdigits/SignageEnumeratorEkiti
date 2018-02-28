@@ -57,6 +57,7 @@ public class FieldReportingAreaListActivity extends Activity implements GoogleAp
     private static String responseJSON;
     ListView lstStructures;
     TextView txttowntitle;
+
     Button BtnCancel;
     ImageView imgDelete;
     String getmyuserFK;
@@ -151,7 +152,7 @@ public class FieldReportingAreaListActivity extends Activity implements GoogleAp
             @Override
             public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
                                     long arg3) {
-                sItemPosition=arg2;
+                sItemPosition = arg2;
                 getneededvalues(sItemPosition);
                 final SharedPreferences sharedPref = getBaseContext().getSharedPreferences("com.biscom.signageenumeratorekiti.PREFERENCE_FILE_KEY", Context.MODE_PRIVATE);
                 SharedPreferences.Editor editor = sharedPref.edit();

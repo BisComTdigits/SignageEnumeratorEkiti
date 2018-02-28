@@ -1,8 +1,0 @@
-<resources>
-    <string name="app_name">Ekiti Signage</string>
-    <string name="mapreport">Ekiti Signage</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="action_settings">Refresh</string>
-    <string name="title_activity_task">TaskActivity</string>
-</resources>

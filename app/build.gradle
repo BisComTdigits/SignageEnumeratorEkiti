@@ -6,8 +6,8 @@ android {
         applicationId "com.biscom.signageenumeratorekiti"
         minSdkVersion 21
         targetSdkVersion 25
-        versionCode 31
-        versionName "1.30"
+        versionCode 32
+        versionName "1.31"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
