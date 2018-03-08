@@ -110,6 +110,8 @@
         <service android:name=".EndlessService" />
 
         <activity android:name=".EnforcementTakeAShotActivity"></activity>
+        <activity android:name=".EnforcementByAreaListActivity"></activity>
+        <activity android:name=".list.ListBasic"></activity>
     </application>
 
 </manifest>

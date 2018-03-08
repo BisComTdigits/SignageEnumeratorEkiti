@@ -6,8 +6,8 @@ android {
         applicationId "com.biscom.signageenumeratorekiti"
         minSdkVersion 21
         targetSdkVersion 25
-        versionCode 32
-        versionName "1.31"
+        versionCode 34
+        versionName "1.33"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -34,4 +34,12 @@ dependencies {
     compile 'com.google.android.gms:play-services-location:10.2.1'
     testCompile 'junit:junit:4.12'
     compile files('libs/ImageBase64Encoder.jar')
+
+    // third party dependencies -------------------------------------------------------------------
+    compile 'com.balysv:material-ripple:1.0.2'                  // ripple effect
+    compile 'com.github.bumptech.glide:glide:3.7.0'             // image loader
+    compile 'com.wdullaer:materialdatetimepicker:3.2.0'         // date & time picker
+    compile 'com.mikhaellopez:circularimageview:3.0.2'          // circle image view
+    compile 'com.github.pchmn:MaterialChipsInput:1.0.5'         // material chip
+    compile 'com.hootsuite.android:nachos:1.1.1'                // material chips
 }

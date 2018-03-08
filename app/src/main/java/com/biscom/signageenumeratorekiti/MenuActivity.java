@@ -27,6 +27,8 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.biscom.signageenumeratorekiti.list.ListBasic;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -196,6 +198,12 @@ public class MenuActivity extends AppCompatActivity {
                     startActivity(myintent);
 
                 }
+                else if (id == R.id.mnu_fieldmonitor) {
+                    Intent myintent = new Intent(MenuActivity.this, EnforcementByAreaListActivity.class);
+                    startActivity(myintent);
+
+                }
+
                 else if (id == R.id.mnu_signout) {
                     final SharedPreferences sharedPref = getBaseContext().getSharedPreferences("com.biscom.signageenumeratorekiti.PREFERENCE_FILE_KEY", Context.MODE_PRIVATE);
                     SharedPreferences.Editor editor = sharedPref.edit();

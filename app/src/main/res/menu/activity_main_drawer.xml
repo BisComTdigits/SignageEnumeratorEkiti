@@ -53,6 +53,8 @@
             android:title="Download Manifest" />
         <item android:id="@+id/mnu_fieldwork" android:icon="@android:drawable/ic_menu_gallery"
             android:title="Field Work" />
+        <item android:id="@+id/mnu_fieldmonitor" android:icon="@android:drawable/ic_menu_gallery"
+            android:title="Field Monitor" />
 
         <item android:id="@+id/mnu_close" android:icon="@android:drawable/ic_media_previous"
             android:title="Close" />
